@@ -13,9 +13,6 @@ export default function Login() {
 
   const handleLogin = () => {
     setIsLoading(true);
-
-    // Here, you'd usually verify login credentials (e.g., with an API call).
-    // For now, let's assume login is successful after 2 seconds.
     setTimeout(() => {
       console.log('Login successful');
       toast({
@@ -26,7 +23,6 @@ export default function Login() {
         isClosable: true,
       });
 
-      // After successful login, navigate to the dashboard
       router.push('/dashboard');
     }, 2000);
   };
@@ -45,7 +41,7 @@ export default function Login() {
       >
         <VStack spacing={6} align="stretch">
           <Heading as="h2" size="lg" color="teal.500" textAlign="center">
-            Welcome Back!
+            Log In!
           </Heading>
           <Text color="gray.600" textAlign="center">
             Please enter your credentials to log in

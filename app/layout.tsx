@@ -41,7 +41,7 @@ export default function RootLayout({
           fontSans.variable
         )}
       >
-        <ClerkProvider> {/* Wrap your app with ClerkProvider */}
+        <ClerkProvider> 
           <ChakraProvider>
             <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
               <div className="relative flex flex-col h-screen">

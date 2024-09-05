@@ -26,20 +26,6 @@ export default function Dashboard() {
     return <RedirectToSignIn />;
   }
 
-  const mockATSResults = {
-    score: 75,
-    findings: [
-      { passed: true, message: 'Contact information present' },
-      { passed: false, message: 'Missing key skills' },
-      { passed: true, message: 'Education section well-formatted' },
-    ],
-    suggestions: [
-      'Add more industry-specific keywords',
-      'Quantify your achievements with specific metrics',
-      'Include a summary or objective statement',
-    ],
-  };
-
   return (
     <Box className="container mx-auto p-4">
       <header className="flex justify-between items-center mb-8">
