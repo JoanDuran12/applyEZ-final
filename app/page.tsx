@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react';
-import { useRouter } from 'next/navigation'; // Check if you're using this for app directory
+import { useRouter } from 'next/navigation'; 
 import { Button, VStack, Heading, Input, Box, FormControl, FormLabel, Text, useToast } from '@chakra-ui/react';
 
 export default function Login() {
@@ -59,7 +59,7 @@ export default function Login() {
               value={email}
               onChange={(e) => setEmail(e.target.value)} 
               focusBorderColor="teal.500"
-              color="white"
+              color="black"
             />
           </FormControl>
 
@@ -71,6 +71,8 @@ export default function Login() {
               value={password}
               onChange={(e) => setPassword(e.target.value)} 
               focusBorderColor="teal.500"
+              color="black"
+
             />
           </FormControl>
 
